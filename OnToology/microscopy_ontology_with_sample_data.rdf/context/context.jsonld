@@ -1,0 +1,201 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "Bacterium" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Bacterium"
+    },
+    "measurementType" : {
+      "@id" : "http://www.owl-ontologies.com/ex#measurementType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAcquisitionSetting" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasAcquisitionSetting",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "emissionRange" : {
+      "@id" : "http://www.owl-ontologies.com/ex#emissionRange",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "detectsBacterium" : {
+      "@id" : "http://www.owl-ontologies.com/ex#detectsBacterium",
+      "@type" : "@id"
+    },
+    "pixelSize" : {
+      "@id" : "http://www.owl-ontologies.com/ex#pixelSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "BrightFieldChannel" : {
+      "@id" : "http://www.owl-ontologies.com/ex#BrightFieldChannel"
+    },
+    "partOfExperiment" : {
+      "@id" : "http://www.owl-ontologies.com/ex#partOfExperiment",
+      "@type" : "@id"
+    },
+    "BiologicalSample" : {
+      "@id" : "http://www.owl-ontologies.com/ex#BiologicalSample"
+    },
+    "MicroscopyImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#MicroscopyImage"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "producedBy" : {
+      "@id" : "http://www.owl-ontologies.com/ex#producedBy",
+      "@type" : "@id"
+    },
+    "FluorescenceChannel" : {
+      "@id" : "http://www.owl-ontologies.com/ex#FluorescenceChannel"
+    },
+    "hasValue" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ImageAnalysisSoftware" : {
+      "@id" : "http://www.owl-ontologies.com/ex#ImageAnalysisSoftware"
+    },
+    "channelFluorophore" : {
+      "@id" : "http://www.owl-ontologies.com/ex#channelFluorophore",
+      "@type" : "@id"
+    },
+    "Measurement" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Measurement"
+    },
+    "Activity" : {
+      "@id" : "http://www.owl-ontologies.com/prov#Activity"
+    },
+    "ChannelMergeStep" : {
+      "@id" : "http://www.owl-ontologies.com/ex#ChannelMergeStep"
+    },
+    "inputImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#inputImage",
+      "@type" : "@id"
+    },
+    "objectiveMagnification" : {
+      "@id" : "http://www.owl-ontologies.com/ex#objectiveMagnification",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Treatment" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Treatment"
+    },
+    "hasChannel" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasChannel",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://www.owl-ontologies.com/prov#Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "usesSoftware" : {
+      "@id" : "http://www.owl-ontologies.com/ex#usesSoftware",
+      "@type" : "@id"
+    },
+    "outputImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#outputImage",
+      "@type" : "@id"
+    },
+    "ObjectiveLens" : {
+      "@id" : "http://www.owl-ontologies.com/ex#ObjectiveLens"
+    },
+    "acquiredBy" : {
+      "@id" : "http://www.owl-ontologies.com/ex#acquiredBy",
+      "@type" : "@id"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "depicts" : {
+      "@id" : "http://www.owl-ontologies.com/ex#depicts",
+      "@type" : "@id"
+    },
+    "rawImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#rawImage"
+    },
+    "MultichannelImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#MultichannelImage"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.owl-ontologies.com/prov#wasAssociatedWith",
+      "@type" : "@id"
+    },
+    "hasTreatment" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasTreatment",
+      "@type" : "@id"
+    },
+    "ProcessingStep" : {
+      "@id" : "http://www.owl-ontologies.com/ex#ProcessingStep"
+    },
+    "hasObjective" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasObjective",
+      "@type" : "@id"
+    },
+    "Operator" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Operator"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Entity" : {
+      "@id" : "http://www.owl-ontologies.com/prov#Entity"
+    },
+    "waveLengthBand" : {
+      "@id" : "http://www.owl-ontologies.com/ex#waveLengthBand",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Fluorophore" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Fluorophore"
+    },
+    "Channel" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Channel"
+    },
+    "MergedImage" : {
+      "@id" : "http://www.owl-ontologies.com/ex#MergedImage"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://www.owl-ontologies.com/ex#hasMeasurement",
+      "@type" : "@id"
+    },
+    "Microscope" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Microscope"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Experiment" : {
+      "@id" : "http://www.owl-ontologies.com/ex#Experiment"
+    },
+    "AcquisitionSetting" : {
+      "@id" : "http://www.owl-ontologies.com/ex#AcquisitionSetting"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "resolution" : {
+      "@id" : "http://www.owl-ontologies.com/ex#resolution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
