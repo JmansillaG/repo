@@ -1,0 +1,506 @@
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/jesus-mansilla/microscopy-ontology#/1.0.1> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/contributor> <https://w3id.org/people#AContributorURI> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/created> "2021-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/creator> "Jesús Mansilla" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/description> "The purpose of this ontology is to formally represent knowledge about microscopy imaging, including image acquisition, image properties, channels, fluorophores, samples, and processing workflows.\nThe ontology aims to enable semantic annotation, interoperability, and reasoning over microscopy datasets, especially in contexts such as fluorescence microscopy, confocal imaging, and digital image analysis."@en .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/dc/terms/title> "Microscopy Fluorescence Ontology"@en .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "choosenprefix" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/example#> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/example/1.0.0> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ex#acquiredBy
+<http://www.owl-ontologies.com/ex#acquiredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#acquiredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#acquiredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Microscope> .
+# 
+# http://www.owl-ontologies.com/ex#channelFluorophore
+<http://www.owl-ontologies.com/ex#channelFluorophore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#channelFluorophore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#FluorescenceChannel> .
+<http://www.owl-ontologies.com/ex#channelFluorophore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Fluorophore> .
+# 
+# http://www.owl-ontologies.com/ex#depicts
+<http://www.owl-ontologies.com/ex#depicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#depicts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#depicts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#BiologicalSample> .
+# 
+# http://www.owl-ontologies.com/ex#detectsBacterium
+<http://www.owl-ontologies.com/ex#detectsBacterium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#detectsBacterium> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Channel> .
+<http://www.owl-ontologies.com/ex#detectsBacterium> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Bacterium> .
+# 
+# http://www.owl-ontologies.com/ex#hasAcquisitionSetting
+<http://www.owl-ontologies.com/ex#hasAcquisitionSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#hasAcquisitionSetting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#hasAcquisitionSetting> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+# 
+# http://www.owl-ontologies.com/ex#hasChannel
+<http://www.owl-ontologies.com/ex#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#hasChannel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#hasChannel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Channel> .
+# 
+# http://www.owl-ontologies.com/ex#hasMeasurement
+<http://www.owl-ontologies.com/ex#hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Bacterium> .
+<http://www.owl-ontologies.com/ex#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Measurement> .
+# 
+# http://www.owl-ontologies.com/ex#hasObjective
+<http://www.owl-ontologies.com/ex#hasObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#hasObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Microscope> .
+<http://www.owl-ontologies.com/ex#hasObjective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#ObjectiveLens> .
+# 
+# http://www.owl-ontologies.com/ex#hasTreatment
+<http://www.owl-ontologies.com/ex#hasTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#BiologicalSample> .
+<http://www.owl-ontologies.com/ex#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Treatment> .
+# 
+# http://www.owl-ontologies.com/ex#inputImage
+<http://www.owl-ontologies.com/ex#inputImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#inputImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+<http://www.owl-ontologies.com/ex#inputImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+# 
+# http://www.owl-ontologies.com/ex#outputImage
+<http://www.owl-ontologies.com/ex#outputImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#outputImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+<http://www.owl-ontologies.com/ex#outputImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+# 
+# http://www.owl-ontologies.com/ex#partOfExperiment
+<http://www.owl-ontologies.com/ex#partOfExperiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#partOfExperiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#partOfExperiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#Experiment> .
+# 
+# http://www.owl-ontologies.com/ex#producedBy
+<http://www.owl-ontologies.com/ex#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<http://www.owl-ontologies.com/ex#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+# 
+# http://www.owl-ontologies.com/ex#usesSoftware
+<http://www.owl-ontologies.com/ex#usesSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ex#usesSoftware> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+<http://www.owl-ontologies.com/ex#usesSoftware> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ex#ImageAnalysisSoftware> .
+# 
+# http://www.owl-ontologies.com/prov#wasAssociatedWith
+<http://www.owl-ontologies.com/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+<http://www.owl-ontologies.com/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/prov#Agent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ex#emissionRange
+<http://www.owl-ontologies.com/ex#emissionRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#emissionRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Fluorophore> .
+<http://www.owl-ontologies.com/ex#emissionRange> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.owl-ontologies.com/ex#hasUnit
+<http://www.owl-ontologies.com/ex#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Measurement> .
+<http://www.owl-ontologies.com/ex#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.owl-ontologies.com/ex#hasValue
+<http://www.owl-ontologies.com/ex#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Measurement> .
+<http://www.owl-ontologies.com/ex#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.owl-ontologies.com/ex#measurementType
+<http://www.owl-ontologies.com/ex#measurementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#measurementType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Measurement> .
+<http://www.owl-ontologies.com/ex#measurementType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.owl-ontologies.com/ex#objectiveMagnification
+<http://www.owl-ontologies.com/ex#objectiveMagnification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#objectiveMagnification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+<http://www.owl-ontologies.com/ex#objectiveMagnification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.owl-ontologies.com/ex#pixelSize
+<http://www.owl-ontologies.com/ex#pixelSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#pixelSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+<http://www.owl-ontologies.com/ex#pixelSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.owl-ontologies.com/ex#resolution
+<http://www.owl-ontologies.com/ex#resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#resolution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+<http://www.owl-ontologies.com/ex#resolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.owl-ontologies.com/ex#waveLengthBand
+<http://www.owl-ontologies.com/ex#waveLengthBand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ex#waveLengthBand> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ex#Channel> .
+<http://www.owl-ontologies.com/ex#waveLengthBand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ex#AcquisitionSetting
+<http://www.owl-ontologies.com/ex#AcquisitionSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#Bacterium
+<http://www.owl-ontologies.com/ex#Bacterium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#BiologicalSample
+<http://www.owl-ontologies.com/ex#BiologicalSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#BiologicalSample> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+# 
+# http://www.owl-ontologies.com/ex#BrightFieldChannel
+<http://www.owl-ontologies.com/ex#BrightFieldChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#BrightFieldChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ex#Channel> .
+<http://www.owl-ontologies.com/ex#BrightFieldChannel> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/ex#FluorescenceChannel> .
+# 
+# http://www.owl-ontologies.com/ex#Channel
+<http://www.owl-ontologies.com/ex#Channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#ChannelMergeStep
+<http://www.owl-ontologies.com/ex#ChannelMergeStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#ChannelMergeStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+# 
+# http://www.owl-ontologies.com/ex#Experiment
+<http://www.owl-ontologies.com/ex#Experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#FluorescenceChannel
+<http://www.owl-ontologies.com/ex#FluorescenceChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#FluorescenceChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/ex#Channel> .
+<http://www.owl-ontologies.com/ex#FluorescenceChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#Fluorophore> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#channelFluorophore> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.owl-ontologies.com/ex#Fluorophore
+<http://www.owl-ontologies.com/ex#Fluorophore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#Fluorophore> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/ex#Microscope> .
+<http://www.owl-ontologies.com/ex#Fluorophore> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/ex#rawImage> .
+# 
+# http://www.owl-ontologies.com/ex#ImageAnalysisSoftware
+<http://www.owl-ontologies.com/ex#ImageAnalysisSoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#Measurement
+<http://www.owl-ontologies.com/ex#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#MergedImage
+<http://www.owl-ontologies.com/ex#MergedImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#MergedImage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.owl-ontologies.com/ex#ChannelMergeStep> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#producedBy> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.owl-ontologies.com/ex#Microscope
+<http://www.owl-ontologies.com/ex#Microscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#Microscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#ObjectiveLens> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#hasObjective> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.owl-ontologies.com/ex#MicroscopyImage
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/prov#Entity> .
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#Microscope> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#acquiredBy> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#BiologicalSample> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#depicts> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#hasAcquisitionSetting> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/ex#MicroscopyImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#Channel> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#hasChannel> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.owl-ontologies.com/ex#MultichannelImage
+<http://www.owl-ontologies.com/ex#MultichannelImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#MultichannelImage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#Channel> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#hasChannel> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.owl-ontologies.com/ex#ObjectiveLens
+<http://www.owl-ontologies.com/ex#ObjectiveLens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#Operator
+<http://www.owl-ontologies.com/ex#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/prov#Agent> .
+# 
+# http://www.owl-ontologies.com/ex#ProcessingStep
+<http://www.owl-ontologies.com/ex#ProcessingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#ProcessingStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/prov#Activity> .
+<http://www.owl-ontologies.com/ex#ProcessingStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#inputImage> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.owl-ontologies.com/ex#ProcessingStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#outputImage> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.owl-ontologies.com/ex#Treatment
+<http://www.owl-ontologies.com/ex#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/ex#rawImage
+<http://www.owl-ontologies.com/ex#rawImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ex#rawImage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#complementOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.owl-ontologies.com/ex#ProcessingStep> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.owl-ontologies.com/ex#producedBy> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.owl-ontologies.com/prov#Activity
+<http://www.owl-ontologies.com/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/prov#Agent
+<http://www.owl-ontologies.com/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/prov#Entity
+<http://www.owl-ontologies.com/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1
+<https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#AcquisitionSetting> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> <http://www.owl-ontologies.com/ex#objectiveMagnification> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> <http://www.owl-ontologies.com/ex#pixelSize> "0.108"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> <http://www.owl-ontologies.com/ex#resolution> "1024x1024" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Bacterium> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Bacterium> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Bacterium> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Bacterium> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Bacterium> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02> <http://www.owl-ontologies.com/ex#hasMeasurement> <https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#BrightFieldChannel> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.owl-ontologies.com/ex#detectsBacterium> <https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.owl-ontologies.com/ex#detectsBacterium> <https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.owl-ontologies.com/ex#detectsBacterium> <https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> <http://www.owl-ontologies.com/ex#waveLengthBand> "400-700" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#FluorescenceChannel> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.owl-ontologies.com/ex#channelFluorophore> <https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.owl-ontologies.com/ex#detectsBacterium> <https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.owl-ontologies.com/ex#detectsBacterium> <https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.owl-ontologies.com/ex#emissionRange> "500-550" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> <http://www.owl-ontologies.com/ex#waveLengthBand> "488nm" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC
+<https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Fluorophore> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#MicroscopyImage> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.owl-ontologies.com/ex#acquiredBy> <https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.owl-ontologies.com/ex#depicts> <https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.owl-ontologies.com/ex#hasAcquisitionSetting> <https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.owl-ontologies.com/ex#hasChannel> <https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001> <http://www.owl-ontologies.com/ex#hasChannel> <https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> <http://www.owl-ontologies.com/ex#hasUnit> "cells" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> <http://www.owl-ontologies.com/ex#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "count" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> <http://www.owl-ontologies.com/ex#hasUnit> "cells" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> <http://www.owl-ontologies.com/ex#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "count" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> <http://www.owl-ontologies.com/ex#hasUnit> "cells" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> <http://www.owl-ontologies.com/ex#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "count" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> <http://www.owl-ontologies.com/ex#hasUnit> "cells" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "count" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> <http://www.owl-ontologies.com/ex#hasUnit> "a.u." .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> <http://www.owl-ontologies.com/ex#hasValue> "701.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT> <http://www.owl-ontologies.com/ex#measurementType> "fluorescenceIntensity" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> <http://www.owl-ontologies.com/ex#hasUnit> "cells" .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> <http://www.owl-ontologies.com/ex#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT> <http://www.owl-ontologies.com/ex#measurementType> "count" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Measurement> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> <http://www.owl-ontologies.com/ex#hasUnit> "a.u." .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> <http://www.owl-ontologies.com/ex#hasValue> "800.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT> <http://www.owl-ontologies.com/ex#measurementType> "fluorescenceIntensity" .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#Microscope> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x
+<https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#ObjectiveLens> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x> <http://www.owl-ontologies.com/ex#hasObjective> <https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x> .
+# 
+# https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A
+<https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/ex#BiologicalSample> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
