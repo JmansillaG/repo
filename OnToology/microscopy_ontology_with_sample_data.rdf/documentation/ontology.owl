@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/jesus-mansilla/microscopy-ontology#"
+     xml:base="https://w3id.org/jesus-mansilla/microscopy-ontology"
+     xmlns:ex="http://www.owl-ontologies.com/ex#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#">
+        <owl:versionIRI rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#/1.0.1"/>
+        <terms:contributor rdf:resource="https://w3id.org/people#AContributorURI"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</terms:created>
+        <terms:creator>Jesús Mansilla</terms:creator>
+        <terms:description xml:lang="en">The purpose of this ontology is to formally represent knowledge about microscopy imaging, including image acquisition, image properties, channels, fluorophores, samples, and processing workflows.
+The ontology aims to enable semantic annotation, interoperability, and reasoning over microscopy datasets, especially in contexts such as fluorescence microscopy, confocal imaging, and digital image analysis.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">Microscopy Fluorescence Ontology</terms:title>
+        <vann:preferredNamespacePrefix>choosenprefix</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/example#"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/example/1.0.0"/>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#acquiredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#acquiredBy">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Microscope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#channelFluorophore -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#channelFluorophore">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#FluorescenceChannel"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Fluorophore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#depicts -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#depicts">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#BiologicalSample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#detectsBacterium -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#detectsBacterium">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasAcquisitionSetting -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#hasAcquisitionSetting">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasChannel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#hasChannel">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#hasMeasurement">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasObjective -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#hasObjective">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Microscope"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#ObjectiveLens"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasTreatment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#BiologicalSample"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#inputImage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#inputImage">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#outputImage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#outputImage">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#partOfExperiment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#partOfExperiment">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#producedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#producedBy">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#usesSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ex#usesSoftware">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ex#ImageAnalysisSoftware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/prov#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/prov#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#emissionRange -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#emissionRange">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Fluorophore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#hasUnit">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#hasValue">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#measurementType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#measurementType">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#objectiveMagnification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#objectiveMagnification">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#pixelSize -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#pixelSize">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#resolution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#resolution">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#waveLengthBand -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ex#waveLengthBand">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#AcquisitionSetting -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Bacterium -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Bacterium"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#BiologicalSample -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#BiologicalSample">
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#BrightFieldChannel -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#BrightFieldChannel">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/ex#FluorescenceChannel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Channel -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Channel"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#ChannelMergeStep -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#ChannelMergeStep">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Experiment -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Experiment"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#FluorescenceChannel -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#FluorescenceChannel">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#channelFluorophore"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#Fluorophore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Fluorophore -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Fluorophore">
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/ex#Microscope"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/ex#rawImage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#ImageAnalysisSoftware -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#ImageAnalysisSoftware"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Measurement -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Measurement"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#MergedImage -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#MergedImage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#producedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/ex#ChannelMergeStep"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Microscope -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Microscope">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#hasObjective"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#ObjectiveLens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#MicroscopyImage -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#MicroscopyImage">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/prov#Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#acquiredBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#Microscope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#depicts"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#BiologicalSample"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#hasAcquisitionSetting"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#hasChannel"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#MultichannelImage -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#MultichannelImage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#hasChannel"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#Channel"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#ObjectiveLens -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#ObjectiveLens"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Operator -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Operator">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/prov#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#ProcessingStep -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#ProcessingStep">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/prov#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#inputImage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#outputImage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#Treatment -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#Treatment"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ex#rawImage -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ex#rawImage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/ex#producedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/ex#ProcessingStep"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/prov#Activity"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/prov#Agent"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/prov#Entity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#AcquisitionSetting"/>
+        <ex:objectiveMagnification rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</ex:objectiveMagnification>
+        <ex:pixelSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.108</ex:pixelSize>
+        <ex:resolution>1024x1024</ex:resolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Bacterium"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT"/>
+        <ex:hasMeasurement rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#BrightFieldChannel"/>
+        <ex:detectsBacterium rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_01"/>
+        <ex:detectsBacterium rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_02"/>
+        <ex:detectsBacterium rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_BF_03"/>
+        <ex:waveLengthBand>400-700</ex:waveLengthBand>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#FluorescenceChannel"/>
+        <ex:channelFluorophore rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC"/>
+        <ex:detectsBacterium rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_01"/>
+        <ex:detectsBacterium rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#BAC_FL_02"/>
+        <ex:emissionRange>500-550</ex:emissionRange>
+        <ex:waveLengthBand>488nm</ex:waveLengthBand>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#DiBAC">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Fluorophore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#IMG_001">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#MicroscopyImage"/>
+        <ex:acquiredBy rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01"/>
+        <ex:depicts rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A"/>
+        <ex:hasAcquisitionSetting rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#ACQ_1"/>
+        <ex:hasChannel rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_BF"/>
+        <ex:hasChannel rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#CH_IMG001_FL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_01_COUNT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>cells</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ex:hasValue>
+        <ex:measurementType>count</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_02_COUNT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>cells</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ex:hasValue>
+        <ex:measurementType>count</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_BF_03_COUNT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>cells</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ex:hasValue>
+        <ex:measurementType>count</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_COUNT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>cells</ex:hasUnit>
+        <ex:measurementType rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ex:measurementType>
+        <ex:measurementType>count</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_01_INT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>a.u.</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">701.5</ex:hasValue>
+        <ex:measurementType>fluorescenceIntensity</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_COUNT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>cells</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ex:hasValue>
+        <ex:measurementType>count</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MEAS_BAC_FL_02_INT">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Measurement"/>
+        <ex:hasUnit>a.u.</ex:hasUnit>
+        <ex:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.6</ex:hasValue>
+        <ex:measurementType>fluorescenceIntensity</ex:measurementType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#MIC_01">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#Microscope"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#ObjectiveLens"/>
+        <ex:hasObjective rdf:resource="https://w3id.org/jesus-mansilla/microscopy-ontology#OBJ_60x"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/jesus-mansilla/microscopy-ontology#SAMP_A">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/ex#BiologicalSample"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
